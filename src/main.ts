@@ -1,11 +1,5 @@
 import './style.css';
 
-const loadContent = async () => {
-  const response = await fetch('/portfolio-new/src/data/content.json');
-  const content = await response.json();
-  return content;
-};
-
 document.addEventListener('DOMContentLoaded',() => {
   document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <header>
