@@ -35,14 +35,19 @@
           ]
         },
         {
+          "type": "textSection",
+          "title": "The challenge",
+          "description": "The primary challenge was to design a platform that seamlessly combined i-Gaming and sports betting experiences while ensuring it remained intuitive and engaging for both new and experienced users. Balancing the complexity of sports betting interfaces with the fast-paced nature of gaming required careful attention to usability and information hierarchy. <br /><br /> Additionally, we needed to create a scalable design system that could support a wide range of features, from live betting and in-game interactions to personalized dashboards, without overwhelming the user. <br /><br /> Another key challenge was aligning our designs with responsible gaming regulations while maintaining a user-friendly and enjoyable experience. We also faced tight deadlines, which required efficient collaboration and rapid iterations based on user feedback. <br /><br /> This project pushed us to think critically about navigation flows, accessibility, and mobile responsiveness, ensuring a consistent experience across devices while meeting both business goals and user needs."
+        },
+        {
           "type": "testimonialSection",
-          "title": "The redesign has significantly improved our conversion rates and customer satisfaction.",
-          "description": "Client Testimonial"
+          "title": "Our new design system reduced development time for future features by 50%.",
+          "description": "Smart systems. Faster outcomes."
         },
         {
           "type": "textSection",
-          "title": "Additional Information",
-          "description": "This is an additional text section that can be placed anywhere in the content.<br /><br /> It provides more flexibility in arranging the content dynamically."
+          "title": "Impact",
+          "description": "The design solutions we implemented resulted in a platform that is both visually engaging and user-friendly, providing a seamless experience for both i-Gaming and sports betting users. By leveraging a design system, we ensured consistency across all touchpoints, which improved usability and reduced development time. <br /><br /> Through user-centered design and iterative testing, we streamlined the betting process, reducing friction in key flows such as placing bets, managing accounts, and accessing live game updates. Early usability tests showed a significant improvement in task completion rates and user satisfaction, particularly with the quick bet feature and personalized recommendations. <br /><br /> The modular design system we built is now serving as a foundation for future feature expansions, making it easier for the team to maintain and scale the platform. Additionally, our focus on responsible gaming practices helped the platform meet industry standards without compromising the user experience. <br /><br /> Overall, this project not only enhanced the platform’s usability and performance but also demonstrated the business value of user-centered design, driving higher user engagement and retention."
         }
       ]
     }
