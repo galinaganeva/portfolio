@@ -1,9 +1,19 @@
 import { defineConfig } from "vite";
+import { createHtmlPlugin } from "vite-plugin-html";
 import { viteStaticCopy } from "vite-plugin-static-copy";
 
 export default defineConfig({
-  base: "/portfolio-new",
+  base: "/portfolio-new/",
   plugins: [
+    createHtmlPlugin({
+      minify: true,
+      inject: {
+        injectData: {
+          cssPath: "/portfolio-new/assets/style.css",
+          jsPath: "/portfolio-new/assets/sectionGenerator.js",
+        },
+      },
+    }),
     viteStaticCopy({
       targets: [
         {
