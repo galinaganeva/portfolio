@@ -1,24 +1,24 @@
 import './style.css'
 
 // Header section
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-  <header>
-    <div class="logo-container">
-      <h1 class="logo">GALINA GANEVA</h1>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#">RESUME</a></li>
-        <img src="/portfolio-new/arrow.svg" width="32" height="32" />
-      </ul>
-    </nav>
-  </header>
-  <main id="main"></main>
-  <footer>
-    <p>2025</p>
-    <p>Galina Ganeva</p>
-  </footer>
-`;
+// document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
+//   <header>
+//     <div class="logo-container">
+//       <h1 class="logo">GALINA GANEVA</h1>
+//     </div>
+//     <nav>
+//       <ul>
+//         <li><a href="#">RESUME</a></li>
+//         <img src="/portfolio-new/arrow.svg" width="32" height="32" />
+//       </ul>
+//     </nav>
+//   </header>
+//   <main id="main"></main>
+//   <footer>
+//     <p>2025</p>
+//     <p>Galina Ganeva</p>
+//   </footer>
+// `;
 
 // Hero section
 const heroSection = `
@@ -106,9 +106,9 @@ const generateProjectsHTML = () => {
 document.addEventListener('DOMContentLoaded', () => {
   const main = document.querySelector<HTMLElement>('#main');
   if (main) {
-    main.innerHTML += heroSection;
-    main.innerHTML += aboutSection;
-    main.innerHTML += generateProjectsHTML();
+    // main.innerHTML += heroSection;
+    // main.innerHTML += aboutSection;
+    // main.innerHTML += generateProjectsHTML();
   }
 
   // Handle spline viewer logo removal
