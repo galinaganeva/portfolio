@@ -144,6 +144,7 @@ nav ul li a {
   align-items: flex-start;
   align-self: stretch;
   border-bottom: 1px dashed var(--primary-color);
+  width: 100%;
 }
 .project {
   display: flex;
@@ -229,6 +230,7 @@ footer p {
 }
 .about-section {
   padding: 100px 0px 96px 0px;
+  width: 100%;
 }
 .section-project-info {
   padding: 48px 0px;

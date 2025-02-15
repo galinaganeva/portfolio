@@ -1,28 +1,36 @@
-import './style.css'
+import './style.css';
 
-// Header section
-// document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-//   <header>
-//     <div class="logo-container">
-//       <h1 class="logo">GALINA GANEVA</h1>
-//     </div>
-//     <nav>
-//       <ul>
-//         <li><a href="#">RESUME</a></li>
-//         <img src="/portfolio-new/arrow.svg" width="32" height="32" />
-//       </ul>
-//     </nav>
-//   </header>
-//   <main id="main"></main>
-//   <footer>
-//     <p>2025</p>
-//     <p>Galina Ganeva</p>
-//   </footer>
-// `;
+const loadContent = async () => {
+  const response = await fetch('/portfolio-new/src/data/content.json');
+  const content = await response.json();
+  return content;
+};
+
+document.addEventListener('DOMContentLoaded',() => {
+  document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
+    <header>
+      <div class="logo-container">
+        <h1 class="logo">GALINA GANEVA</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">RESUME</a></li>
+          <img src="portfolio-new/arrow.svg" width="32" height="32" />
+        </ul>
+      </nav>
+    </header>
+    <main id="main">
+    </main>
+    <footer>
+      <p>2025</p>
+      <p>Galina Ganeva</p>
+    </footer>
+  `;
+});
 
 // Hero section
 const heroSection = `
-  <section style="position: relative">
+  <section style="position: relative; width: 100%;">
     <div class="hero-container">
       <h1 class="hero-title left">Less Noise,</h1>
       <h1 class="hero-title middle">More Clarity,</h1>
@@ -106,9 +114,9 @@ const generateProjectsHTML = () => {
 document.addEventListener('DOMContentLoaded', () => {
   const main = document.querySelector<HTMLElement>('#main');
   if (main) {
-    // main.innerHTML += heroSection;
-    // main.innerHTML += aboutSection;
-    // main.innerHTML += generateProjectsHTML();
+    main.innerHTML += heroSection;
+    main.innerHTML += aboutSection;
+    main.innerHTML += generateProjectsHTML();
   }
 
   // Handle spline viewer logo removal
@@ -119,4 +127,12 @@ document.addEventListener('DOMContentLoaded', () => {
       logoElement.remove();
     }
   }
+
+  const projectElements = document.querySelectorAll('.project');
+  projectElements.forEach((projectElement, index) => {
+    projectElement.addEventListener('click', () => {
+      window.location.href = `/portfolio-new/project${index + 1}.html`;
+    });
+  });
 });
+

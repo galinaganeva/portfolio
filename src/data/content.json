@@ -1,0 +1,50 @@
+{
+  "projects": [
+    {
+      "projectId": 1,
+      "sections": [
+        {
+          "type": "projectInfo",
+          "title": "Grandz Bet",
+          "description": "I-Gaming and sports betting platform",
+          "visitSiteText": "Visit Site",
+          "visitSiteIcon": "/portfolio-new/arrow.svg"
+        },
+        {
+          "type": "projectTools",
+          "tools": [
+            { "title": "Category", "description": "Website" },
+            { "title": "Software Used", "description": "Figma" },
+            { "title": "Year", "description": "2024" }
+          ]
+        },
+        {
+          "type": "imageSection",
+          "src": "/portfolio-new/1_hero.png"
+        },
+        {
+          "type": "textSection",
+          "title": "Project Overview",
+          "description": "I worked alongside a team of UI/UX designers and UX researchers to design an i-Gaming platform with sports betting features, focusing on creating an easy-to-use and engaging experience for all users.<br /><br /> Using a design system, we ensured a consistent look and feel across the platform, from game lobbies to live sports betting. Our design process included user research, wireframing, prototyping, and usability testing, which helped us create smooth and intuitive user journeys. <br /><br /> We focused on key areas such as placing bets, managing accounts, and viewing live game updates, while also promoting responsible gaming practices. To keep users engaged, we designed features like personalized game recommendations, real-time odds displays, and quick bet options."
+        },
+        {
+          "type": "photosSection",
+          "photos": [
+            "/portfolio-new/1_photos_1.png",
+            "/portfolio-new/1_photos_2.png"
+          ]
+        },
+        {
+          "type": "testimonialSection",
+          "title": "The redesign has significantly improved our conversion rates and customer satisfaction.",
+          "description": "Client Testimonial"
+        },
+        {
+          "type": "textSection",
+          "title": "Additional Information",
+          "description": "This is an additional text section that can be placed anywhere in the content.<br /><br /> It provides more flexibility in arranging the content dynamically."
+        }
+      ]
+    }
+  ]
+}
