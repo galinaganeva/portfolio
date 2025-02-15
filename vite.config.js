@@ -8,7 +8,7 @@ export default defineConfig({
     createHtmlPlugin({
       minify: true,
       inject: {
-        injectData: {
+        data: {
           cssPath: "/portfolio-new/assets/style.css",
           jsPath: "/portfolio-new/assets/sectionGenerator.js",
         },
