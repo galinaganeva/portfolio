@@ -1,3 +1,5 @@
+import './style.css';
+
 const generateSection = (section: any) => {
   switch (section.type) {
     case "projectInfo":
