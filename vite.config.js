@@ -7,10 +7,6 @@ export default defineConfig({
     viteStaticCopy({
       targets: [
         {
-          src: "project-template.html",
-          dest: ".",
-        },
-        {
           src: "project1.html",
           dest: ".",
         },
