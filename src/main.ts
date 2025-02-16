@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded',() => {
       <nav>
         <ul>
           <li><a href="#">RESUME</a></li>
-          <img src="portfolio-new/arrow.svg" width="32" height="32" />
+          <img src="/portfolio-new/arrow.svg" width="32" height="32" />
         </ul>
       </nav>
     </header>
@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const projectElements = document.querySelectorAll('.project');
   projectElements.forEach((projectElement, index) => {
     projectElement.addEventListener('click', () => {
-      window.location.href = `/portfolio-new/project${index + 1}.html`;
+      window.location.href = `/portfolio-new/project${index + 1}/project${index + 1}.html`;
     });
   });
 });

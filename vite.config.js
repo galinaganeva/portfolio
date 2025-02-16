@@ -1,27 +1,17 @@
+import { dirname, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
 import { defineConfig } from "vite";
-import { createHtmlPlugin } from "vite-plugin-html";
-import { viteStaticCopy } from "vite-plugin-static-copy";
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
   base: "/portfolio-new/",
-  plugins: [
-    createHtmlPlugin({
-      minify: true,
-      inject: {
-        data: {
-          cssPath: "/portfolio-new/assets/style.css",
-          jsPath: "/portfolio-new/assets/sectionGenerator.js",
-        },
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, "index.html"),
+        project1: resolve(__dirname, "project1/project1.html"),
       },
-    }),
-    viteStaticCopy({
-      targets: [
-        {
-          src: "project1.html",
-          dest: ".",
-        },
-        // Add other project HTML files here
-      ],
-    }),
-  ],
+    },
+  },
 });
