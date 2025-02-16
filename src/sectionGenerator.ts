@@ -12,8 +12,12 @@ const generateSection = (section: any) => {
               <h2 class="section-desc">${section.description}</h2>
             </div>
             <div class="visit-site-container">
+            <a href="${section.visitSiteLink}" style="text-decoration: none;
+    display: flex
+;" target="_blank">
               <h3 class="visit-site">${section.visitSiteText}</h3>
               <img class="visit-site-icon" src="${section.visitSiteIcon}" />
+            </a>
             </div>
           </div>
         </section>
