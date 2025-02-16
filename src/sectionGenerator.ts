@@ -1,4 +1,5 @@
 import './style.css';
+import content from './data/content.json';
 
 const generateSection = (section: any) => {
   switch (section.type) {
@@ -66,14 +67,11 @@ const generateMainContent = (sections: any[]) => {
   return sections.map(section => generateSection(section)).join('');
 };
 
-document.addEventListener("DOMContentLoaded", async () => {
+document.addEventListener("DOMContentLoaded", () => {
   // Extract project ID from the URL path
   const urlPath = window.location.pathname;
   const projectIdMatch = urlPath.match(/project(\d+)\.html$/);
   const projectId = projectIdMatch ? parseInt(projectIdMatch[1], 10) : 1;
-
-  const content = await fetch("/portfolio-new/src/data/content.json")
-    .then((response) => response.json());
 
   // Find the project with the matching projectId
   const project = content.projects.find((project: any) => project.projectId === projectId);
