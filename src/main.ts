@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded',() => {
   document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <header>
       <div class="logo-container">
-        <a href="/index.html" class="logo">GALINA GANEVA</a>
+        <a href="/portfolio-new/index.html" class="logo">GALINA GANEVA</a>
       </div>
       <nav>
         <ul>
