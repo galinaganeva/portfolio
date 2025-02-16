@@ -69,9 +69,8 @@ const generateMainContent = (sections: any[]) => {
 
 document.addEventListener("DOMContentLoaded", () => {
   // Extract project ID from the URL path
-  const urlPath = window.location.pathname;
-  const projectIdMatch = urlPath.match(/project(\d+)\.html$/);
-  const projectId = projectIdMatch ? parseInt(projectIdMatch[1], 10) : 1;
+  const urlParams = new URLSearchParams(window.location.search);
+  const projectId = parseInt(urlParams.get('id') || '1', 10);
 
   // Find the project with the matching projectId
   const project = content.projects.find((project: any) => project.projectId === projectId);

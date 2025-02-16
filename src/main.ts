@@ -4,12 +4,16 @@ document.addEventListener('DOMContentLoaded',() => {
   document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <header>
       <div class="logo-container">
-        <h1 class="logo">GALINA GANEVA</h1>
+        <a href="/index.html" class="logo">GALINA GANEVA</a>
       </div>
       <nav>
         <ul>
-          <li><a href="#">RESUME</a></li>
-          <img src="/portfolio-new/arrow.svg" width="32" height="32" />
+            <li><a href="/portfolio-new/GalinaGaneva_CV.pdf" target="_blank">Resume</a></li>
+            <li>
+              <a href="/portfolio-new/GalinaGaneva_CV.pdf" target="_blank"
+                ><img src="/portfolio-new/arrow.svg" width="32" height="32"
+              /></a>
+            </li>
         </ul>
       </nav>
     </header>
@@ -30,10 +34,12 @@ const heroSection = `
       <h1 class="hero-title middle">More Clarity,</h1>
       <h1 class="hero-title right">Bold Impact.</h1>
     </div>
-    <div class="spline-container">
+    <div class="spline-container" style="width: 100%">
+        <div class="spline-container">
       <spline-viewer
         url="https://prod.spline.design/K-5M7t3eeTR7hjzy/scene.splinecode"
       ></spline-viewer>
+    </div>
     </div>
   </section>
 `;
@@ -125,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const projectElements = document.querySelectorAll('.project');
   projectElements.forEach((projectElement, index) => {
     projectElement.addEventListener('click', () => {
-      window.location.href = `/portfolio-new/project${index + 1}/project${index + 1}.html`;
+      window.location.href = `/portfolio-new/project/project.html?id=${index+1}`;
     });
   });
 });
