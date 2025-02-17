@@ -1,4 +1,4 @@
-import"./style-zEPlTBoL.js";const d=[{id:1,number:"01",name:"Grandz Bet",tools:["Website","Figma","2023"],previewImg:"/portfolio-new/1_hero.png",previewDesc:"An online platform for iGaming and sports betting, offering casino games, virtual sports, and live betting."},{id:2,number:"02",name:"Space Fortuna",tools:["Website","Figma","2023"],previewImg:"/portfolio-new/1_hero.png",previewDesc:""},{id:3,number:"03",name:"Grandz Race",tools:["Website","Figma","2023"],previewImg:"/portfolio-new/1_hero.png",previewDesc:""},{id:4,number:"04",name:"Tortuga",tools:["Landing Page","Webflow","2023"],previewImg:"/portfolio-new/1_hero.png",previewDesc:""},{id:5,number:"05",name:"Casino En Ligne Nouveau",tools:["Website","Figma","2023"],previewImg:"/portfolio-new/1_hero.png",previewDesc:""}],p={projects:d};document.addEventListener("DOMContentLoaded",()=>{document.querySelector("#app").innerHTML=`
+import"./style-zEPlTBoL.js";const d=[{id:1,number:"01",name:"Grandz Bet",tools:["Website","Figma","2024"],previewImg:"/portfolio-new/1_hero.png",previewDesc:"An online platform for iGaming and sports betting, offering casino games, virtual sports, and live betting."},{id:2,number:"02",name:"Space Fortuna",tools:["Website","Figma","2023"],previewImg:"",previewDesc:""},{id:3,number:"03",name:"Grandz Race",tools:["Website","Figma","2023"],previewImg:"",previewDesc:""},{id:4,number:"04",name:"Tortuga",tools:["Landing Page","Webflow","2024"],previewImg:"",previewDesc:""},{id:5,number:"05",name:"Casino En Ligne Nouveau",tools:["Website","Figma","2023"],previewImg:"",previewDesc:""}],p={projects:d};document.addEventListener("DOMContentLoaded",()=>{document.querySelector("#app").innerHTML=`
     <header>
         <div class="logo-container">
           <a href="/portfolio-new/index.html" class="logo">GALINA GANEVA</a>
@@ -58,8 +58,8 @@ import"./style-zEPlTBoL.js";const d=[{id:1,number:"01",name:"Grandz Bet",tools:[
             <div class="project-info">
               <h2 class="project-name">${e.name}</h2>
               <div class="project-tools">
-                ${e.tools.map(o=>`
-                  <h4 class="project-item">${o}</h4>
+                ${e.tools.map(s=>`
+                  <h4 class="project-item">${s}</h4>
                 `).join("")}
               </div>
             </div>
@@ -71,4 +71,4 @@ import"./style-zEPlTBoL.js";const d=[{id:1,number:"01",name:"Grandz Bet",tools:[
         </a>
       `).join("")}
     </section>
-  `;document.addEventListener("DOMContentLoaded",()=>{var a;const e=document.querySelector("#main");e&&(e.innerHTML+=v,e.innerHTML+=m,e.innerHTML+=h());const o=new IntersectionObserver(i=>{i.forEach(t=>{t.isIntersecting&&(t.target.classList.add("visible"),o.unobserve(t.target))})},{threshold:.1}),n=document.querySelector(".about-text");n&&o.observe(n);const s=document.querySelector("spline-viewer");if(s){const i=(a=s.shadowRoot)==null?void 0:a.querySelector("#logo");i&&i.remove()}const c=new IntersectionObserver(i=>{i.forEach(t=>{t.isIntersecting&&t.target.classList.add("line-visible")})},{threshold:.2});document.querySelectorAll(".project").forEach(i=>{c.observe(i)});const l=new IntersectionObserver(i=>{i.forEach(t=>{t.isIntersecting&&t.target.classList.add("line-visible")})},{threshold:.9}),r=document.querySelector(".projects");r&&l.observe(r)});
+  `;document.addEventListener("DOMContentLoaded",()=>{var a;const e=document.querySelector("#main");e&&(e.innerHTML+=v,e.innerHTML+=m,e.innerHTML+=h());const s=new IntersectionObserver(i=>{i.forEach(t=>{t.isIntersecting&&(t.target.classList.add("visible"),s.unobserve(t.target))})},{threshold:.1}),n=document.querySelector(".about-text");n&&s.observe(n);const o=document.querySelector("spline-viewer");if(o){const i=(a=o.shadowRoot)==null?void 0:a.querySelector("#logo");i&&i.remove()}const c=new IntersectionObserver(i=>{i.forEach(t=>{t.isIntersecting&&t.target.classList.add("line-visible")})},{threshold:.2});document.querySelectorAll(".project").forEach(i=>{c.observe(i)});const l=new IntersectionObserver(i=>{i.forEach(t=>{t.isIntersecting&&t.target.classList.add("line-visible")})},{threshold:.9}),r=document.querySelector(".projects");r&&l.observe(r)});
