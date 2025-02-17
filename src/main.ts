@@ -30,16 +30,16 @@ document.addEventListener('DOMContentLoaded',() => {
 const heroSection = `
   <section style="position: relative; width: 100%;">
     <div class="hero-container">
-      <h1 class="hero-title left">Less Noise,</h1>
-      <h1 class="hero-title middle">More Clarity,</h1>
-      <h1 class="hero-title right">Bold Impact.</h1>
+      <h1 class="hero-title left" style="animation-delay: 0s;">Less Noise,</h1>
+      <h1 class="hero-title middle" style="animation-delay: 0.2s;">More Clarity,</h1>
+      <h1 class="hero-title right" style="animation-delay: 0.4s;">Bold Impact.</h1>
     </div>
-    <div class="spline-container" style="width: 100%">
-        <div class="spline-container">
-      <spline-viewer
-        url="https://prod.spline.design/K-5M7t3eeTR7hjzy/scene.splinecode"
-      ></spline-viewer>
-    </div>
+    <div class="spline-container" style="width: 100%; overflow:hidden">
+      <div class="spline-container">
+        <spline-viewer
+          url="https://prod.spline.design/K-5M7t3eeTR7hjzy/scene.splinecode"
+        ></spline-viewer>
+      </div>
     </div>
   </section>
 `;
@@ -119,6 +119,23 @@ document.addEventListener('DOMContentLoaded', () => {
     main.innerHTML += generateProjectsHTML();
   }
 
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target); // Stop observing once animation is triggered
+      }
+    });
+  }, {
+    threshold: 0.1 // Trigger when 10% of the element is visible
+  });
+
+  // Observe about text element
+  const aboutText = document.querySelector('.about-text');
+  if (aboutText) {
+    observer.observe(aboutText);
+  }
+
   // Handle spline viewer logo removal
   const splineViewer = document.querySelector('spline-viewer');
   if (splineViewer) {
@@ -128,11 +145,36 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  const lineObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('line-visible');
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
+
   const projectElements = document.querySelectorAll('.project');
   projectElements.forEach((projectElement, index) => {
     projectElement.addEventListener('click', () => {
       window.location.href = `/portfolio-new/project/project.html?id=${index+1}`;
     });
+    lineObserver.observe(projectElement);
   });
+
+  const projectObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('line-visible');
+      }
+    });
+  }, {
+    threshold: 0.9
+  });
+  const projectsContainer = document.querySelector('.projects');
+  if (projectsContainer) {
+    projectObserver.observe(projectsContainer);
+  }
 });
 

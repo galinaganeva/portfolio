@@ -72,6 +72,24 @@ const generateMainContent = (sections: any[]) => {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
+  const header = document.querySelector('header');
+  const progressContainer = document.createElement('div');
+  progressContainer.className = 'progress-container';
+  const progressBar = document.createElement('div');
+  progressBar.className = 'progress-bar';
+  progressContainer.appendChild(progressBar);
+  header?.insertAdjacentElement('afterend', progressContainer);
+
+  // Add scroll listener to update progress bar
+  window.addEventListener('scroll', () => {
+    const windowHeight = window.innerHeight;
+    const documentHeight = document.documentElement.scrollHeight;
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+    
+    const scrollPercent = (scrollTop / (documentHeight - windowHeight)) * 100;
+    progressBar.style.width = `${scrollPercent}%`;
+  });
+  
   // Extract project ID from the URL path
   const urlParams = new URLSearchParams(window.location.search);
   const projectId = parseInt(urlParams.get('id') || '1', 10);
