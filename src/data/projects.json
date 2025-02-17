@@ -4,7 +4,7 @@
       "id": 1,
       "number": "01",
       "name": "Grandz Bet",
-      "tools": ["Website", "Figma", "2023"],
+      "tools": ["Website", "Figma", "2024"],
       "previewImg": "/portfolio-new/1_hero.png",
       "previewDesc": "An online platform for iGaming and sports betting, offering casino games, virtual sports, and live betting."
     },
@@ -13,7 +13,7 @@
       "number": "02",
       "name": "Space Fortuna",
       "tools": ["Website", "Figma", "2023"],
-      "previewImg": "/portfolio-new/1_hero.png",
+      "previewImg": "",
       "previewDesc": ""
     },
     {
@@ -21,15 +21,15 @@
       "number": "03",
       "name": "Grandz Race",
       "tools": ["Website", "Figma", "2023"],
-      "previewImg": "/portfolio-new/1_hero.png",
+      "previewImg": "",
       "previewDesc": ""
     },
     {
       "id": 4,
       "number": "04",
       "name": "Tortuga",
-      "tools": ["Landing Page", "Webflow", "2023"],
-      "previewImg": "/portfolio-new/1_hero.png",
+      "tools": ["Landing Page", "Webflow", "2024"],
+      "previewImg": "",
       "previewDesc": ""
     },
     {
@@ -37,7 +37,7 @@
       "number": "05",
       "name": "Casino En Ligne Nouveau",
       "tools": ["Website", "Figma", "2023"],
-      "previewImg": "/portfolio-new/1_hero.png",
+      "previewImg": "",
       "previewDesc": ""
     }
   ]
