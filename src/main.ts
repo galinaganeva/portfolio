@@ -1,4 +1,12 @@
 import './style.css';
+import projectsData from './data/projects.json';
+
+interface Project {
+  id: number;
+  number: string;
+  name: string;
+  tools: string[];
+}
 
 document.addEventListener('DOMContentLoaded',() => {
   document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
@@ -55,46 +63,12 @@ const aboutSection = `
   </section>
 `;
 
-// Projects data
-const projects = [
-  {
-    id: 1,
-    number: "01",
-    name: "Grandz Bet",
-    tools: ["Website", "Figma", "2023"]
-  },
-  {
-    id: 2,
-    number: "02",
-    name: "Space Fortuna",
-    tools: ["Website", "Figma", "2023"]
-  },
-  {
-    id: 3,
-    number: "03",
-    name: "Grandz Race",
-    tools: ["Website", "Figma", "2023"]
-  },
-  {
-    id: 4,
-    number: "04",
-    name: "Tortuga",
-    tools: ["Landing Page", "Webflow", "2023"]
-  },
-  {
-    id: 5,
-    number: "05",
-    name: "Casino En Ligne Nouveau",
-    tools: ["Website", "Figma", "2023"]
-  }
-];
-
 // Generate projects HTML
 const generateProjectsHTML = () => {
   return `
     <section class="projects">
-      ${projects.map(project => `
-        <div class="project" key="${project.id}">
+      ${projectsData.projects.map((project: Project) => `
+        <div class="project" data-project-id="${project.id}">
           <h3 class="project-number">${project.number}</h3>
           <div class="project-info">
             <h2 class="project-name">${project.name}</h2>
@@ -156,9 +130,10 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   const projectElements = document.querySelectorAll('.project');
-  projectElements.forEach((projectElement, index) => {
+  projectElements.forEach((projectElement) => {
     projectElement.addEventListener('click', () => {
-      window.location.href = `/portfolio-new/project/project.html?id=${index+1}`;
+      const projectId = projectElement.getAttribute('data-project-id');
+      window.location.href = `/portfolio-new/project/project.html?id=${projectId}`;
     });
     lineObserver.observe(projectElement);
   });
