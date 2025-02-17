@@ -13,15 +13,21 @@ class SectionGenerator {
             <h2 class="section-desc">${section.description}</h2>
           </div>
           <a href="${section.visitSiteLink}" class="visit-site-link" target="_blank">
-          <div class="visit-site-container">
-            <h3 class="visit-site">${section.visitSiteText}</h3>
-            <img class="visit-site-icon" src="${section.visitSiteIcon}" alt="Visit site" />
-          </div>
+            <div class="visit-site-wrapper">
+              <div class="visit-site-content">
+                <h3 class="visit-site">${section.visitSiteText}</h3>
+                <img class="visit-site-icon" src="${section.visitSiteIcon}" alt="Visit site" />
+              </div>
+              <div class="visit-site-content-duplicate">
+                <h3 class="visit-site">${section.visitSiteText}</h3>
+                <img class="visit-site-icon" src="${section.visitSiteIcon}" alt="Visit site" />
+              </div>
+            </div>
           </a>
         </div>
       </section>
     `;
-  }
+}
 
   private static generateProjectTools(section: ProjectToolsSection): string {
     return `

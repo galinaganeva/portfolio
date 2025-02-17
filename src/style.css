@@ -575,6 +575,38 @@ footer p {
 }
 .visit-site-link {
   text-decoration: none;
+  display: block;
+  position: relative;
+  overflow: visible;
+  height: 32px;
+}
+.visit-site-wrapper {
+  position: relative;
+  height: 32px;
+  overflow: hidden;
+}
+.visit-site-content,
+.visit-site-content-duplicate {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 32px;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+.visit-site-content {
+  margin-bottom: -32px;
+}
+.visit-site-content-duplicate {
+  transform: translateY(-100%);
+}
+.visit-site-link:hover .visit-site-content {
+  transform: translateY(100%);
+}
+.visit-site-link:hover .visit-site-content-duplicate {
+  transform: translateY(0);
 }
 
 @media screen and (max-width: 1024px) {
