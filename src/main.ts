@@ -13,20 +13,26 @@ interface Project {
 document.addEventListener('DOMContentLoaded',() => {
   document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <header>
-      <div class="logo-container">
-        <a href="/portfolio-new/index.html" class="logo">GALINA GANEVA</a>
-      </div>
-      <nav>
-        <ul>
-            <li><a href="/portfolio-new/GalinaGaneva_CV.pdf" target="_blank">Resume</a></li>
+        <div class="logo-container">
+          <a href="/portfolio-new/index.html" class="logo">GALINA GANEVA</a>
+        </div>
+        <nav>
+          <ul>
             <li>
-              <a href="/portfolio-new/GalinaGaneva_CV.pdf" target="_blank"
-                ><img src="/portfolio-new/arrow.svg" width="32" height="32"
-              /></a>
+              <a href="/portfolio-new/GalinaGaneva_CV.pdf" target="_blank">
+                <div class="link-content">
+                  <p>Resume</p>
+                  <img src="/portfolio-new/arrow.svg" width="32" height="32" />
+                </div>
+                <div class="link-content-duplicate">
+                  <p>Resume</p>
+                  <img src="/portfolio-new/arrow.svg" width="32" height="32" />
+                </div>
+              </a>
             </li>
-        </ul>
-      </nav>
-    </header>
+          </ul>
+        </nav>
+      </header>
     <main id="main">
     </main>
     <footer>

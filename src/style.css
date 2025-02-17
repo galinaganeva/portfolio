@@ -78,11 +78,50 @@ nav ul li a {
   color: var(--primary-color);
   font-family: var(--font-roboto-mono);
   font-size: 28px;
-  line-height: 32px; /* 114.286% */
+  line-height: 32px;
   letter-spacing: -0.28px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  height: 32px;
+}
+
+.link-content,
+.link-content-duplicate {
   display: flex;
   gap: 8px;
   align-items: center;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.link-content,
+.link-content-duplicate {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  position: relative; /* Change to relative */
+  width: 100%;
+  height: 32px; /* Add fixed height */
+  transition: transform 0.3s ease;
+}
+
+.link-content {
+  margin-bottom: -32px; /* Negative margin to stack elements */
+}
+
+.link-content-duplicate {
+  transform: translateY(-100%); /* Start from above */
+}
+
+nav ul li a:hover .link-content {
+  transform: translateY(100%);
+}
+
+nav ul li a:hover .link-content-duplicate {
+  transform: translateY(0);
 }
 p {
   margin: 0;
