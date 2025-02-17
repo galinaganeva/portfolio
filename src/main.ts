@@ -6,6 +6,8 @@ interface Project {
   number: string;
   name: string;
   tools: string[];
+  previewImg: string;
+  previewDesc: string;
 }
 
 document.addEventListener('DOMContentLoaded',() => {
@@ -77,6 +79,10 @@ const generateProjectsHTML = () => {
                 <h4 class="project-item">${tool}</h4>
               `).join('')}
             </div>
+          </div>
+          <div class="project-preview">
+            <img class="preview-img" src="${project.previewImg}" alt="${project.name}"/>
+            <p class="preview-text">${project.previewDesc}</p>
           </div>
         </div>
       `).join('')}
