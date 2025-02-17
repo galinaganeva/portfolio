@@ -70,21 +70,23 @@ const generateProjectsHTML = () => {
   return `
     <section class="projects">
       ${projectsData.projects.map((project: Project) => `
-        <div class="project" data-project-id="${project.id}">
-          <h3 class="project-number">${project.number}</h3>
-          <div class="project-info">
-            <h2 class="project-name">${project.name}</h2>
-            <div class="project-tools">
-              ${project.tools.map(tool => `
-                <h4 class="project-item">${tool}</h4>
-              `).join('')}
+        <a class="project-container" href="/portfolio-new/project/project.html?id=${project.id}" class="project-link">
+          <div class="project" data-project-id="${project.id}">
+            <h3 class="project-number">${project.number}</h3>
+            <div class="project-info">
+              <h2 class="project-name">${project.name}</h2>
+              <div class="project-tools">
+                ${project.tools.map(tool => `
+                  <h4 class="project-item">${tool}</h4>
+                `).join('')}
+              </div>
+            </div>
+            <div class="project-preview">
+              <img class="preview-img" src="${project.previewImg}" alt="${project.name}"/>
+              <p class="preview-text">${project.previewDesc}</p>
             </div>
           </div>
-          <div class="project-preview">
-            <img class="preview-img" src="${project.previewImg}" alt="${project.name}"/>
-            <p class="preview-text">${project.previewDesc}</p>
-          </div>
-        </div>
+        </a>
       `).join('')}
     </section>
   `;
@@ -137,10 +139,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const projectElements = document.querySelectorAll('.project');
   projectElements.forEach((projectElement) => {
-    projectElement.addEventListener('click', () => {
-      const projectId = projectElement.getAttribute('data-project-id');
-      window.location.href = `/portfolio-new/project/project.html?id=${projectId}`;
-    });
     lineObserver.observe(projectElement);
   });
 

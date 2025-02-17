@@ -80,8 +80,13 @@ nav ul li a {
   font-size: 28px;
   line-height: 32px; /* 114.286% */
   letter-spacing: -0.28px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
-
+p {
+  margin: 0;
+}
 .spline-container {
   height: 85vh;
   position: absolute;
@@ -196,6 +201,11 @@ nav ul li a {
   gap: 134px;
   align-self: stretch;
   position: relative;
+  width: 100%;
+}
+.project-container {
+  width: 100%;
+  text-decoration: none;
 }
 .project-preview {
   position: absolute;
@@ -523,6 +533,9 @@ footer p {
   background: var(--primary-color);
   width: 0%;
   transition: width 0.1s ease;
+}
+.visit-site-link {
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1024px) {

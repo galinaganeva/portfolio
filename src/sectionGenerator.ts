@@ -12,12 +12,12 @@ class SectionGenerator {
             <h1 class="section-title">${section.title}</h1>
             <h2 class="section-desc">${section.description}</h2>
           </div>
+          <a href="${section.visitSiteLink}" class="visit-site-link" target="_blank">
           <div class="visit-site-container">
-            <a href="${section.visitSiteLink}" class="visit-site-link" target="_blank">
-              <h3 class="visit-site">${section.visitSiteText}</h3>
-              <img class="visit-site-icon" src="${section.visitSiteIcon}" alt="Visit site" />
-            </a>
+            <h3 class="visit-site">${section.visitSiteText}</h3>
+            <img class="visit-site-icon" src="${section.visitSiteIcon}" alt="Visit site" />
           </div>
+          </a>
         </div>
       </section>
     `;
