@@ -267,10 +267,14 @@ p {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 .project::before {
-  content: "";
+  display: none;
+}
+.line.line-visible {
+  left: 50%;
+}
+.line {
   position: absolute;
-  left: -100%; /* Start from outside the viewport */
-  top: 0;
+  left: -100%;
   width: 100vw;
   transform: translateX(-50%);
   transition: left 1s ease-out;
@@ -290,9 +294,6 @@ p {
   font-weight: 400;
   line-height: 24px; /* 150% */
   margin: 0;
-}
-.project.line-visible::before {
-  left: 50%; /* Animate to final position */
 }
 .project-number {
   color: var(--primary-color);

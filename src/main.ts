@@ -76,7 +76,8 @@ const generateProjectsHTML = () => {
   return `
     <section class="projects">
       ${projectsData.projects.map((project: Project) => `
-        <a class="project-container" href="/portfolio-new/project/project.html?id=${project.id}" class="project-link">
+        <a class="project-container project-link" href="/portfolio-new/project/project.html?id=${project.id}">
+          <div class="line"></div>
           <div class="project" data-project-id="${project.id}">
             <h3 class="project-number">${project.number}</h3>
             <div class="project-info">
@@ -107,22 +108,49 @@ document.addEventListener('DOMContentLoaded', () => {
     main.innerHTML += generateProjectsHTML();
   }
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target); // Stop observing once animation is triggered
+  // Function to check element visibility
+  const isElementInViewport = (el: Element) => {
+    const rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.top <= (window.innerHeight || document.documentElement.clientHeight)
+    );
+  };
+
+  // Function to handle scroll events
+  const handleScroll = () => {
+    // Handle about text animation
+    const aboutText = document.querySelector('.about-text');
+    if (aboutText && !aboutText.classList.contains('visible')) {
+      if (isElementInViewport(aboutText)) {
+        aboutText.classList.add('visible');
+      }
+    }
+
+    // Handle line animations
+    const lines = document.querySelectorAll('.line');
+    lines.forEach(line => {
+      if (!line.classList.contains('line-visible')) {
+        if (isElementInViewport(line)) {
+          line.classList.add('line-visible');
+        }
       }
     });
-  }, {
-    threshold: 0.1 // Trigger when 10% of the element is visible
-  });
 
-  // Observe about text element
-  const aboutText = document.querySelector('.about-text');
-  if (aboutText) {
-    observer.observe(aboutText);
-  }
+    // Handle projects container animation
+    const projectsContainer = document.querySelector('.projects');
+    if (projectsContainer && !projectsContainer.classList.contains('line-visible')) {
+      if (isElementInViewport(projectsContainer)) {
+        projectsContainer.classList.add('line-visible');
+      }
+    }
+  };
+
+  // Initial check
+  handleScroll();
+
+  // Add scroll event listener
+  window.addEventListener('scroll', handleScroll, { passive: true });
 
   // Handle spline viewer logo removal
   const splineViewer = document.querySelector('spline-viewer');
@@ -131,35 +159,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (logoElement) {
       logoElement.remove();
     }
-  }
-
-  const lineObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('line-visible');
-      }
-    });
-  }, {
-    threshold: 0.2
-  });
-
-  const projectElements = document.querySelectorAll('.project');
-  projectElements.forEach((projectElement) => {
-    lineObserver.observe(projectElement);
-  });
-
-  const projectObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('line-visible');
-      }
-    });
-  }, {
-    threshold: 0.9
-  });
-  const projectsContainer = document.querySelector('.projects');
-  if (projectsContainer) {
-    projectObserver.observe(projectsContainer);
   }
 });
 
