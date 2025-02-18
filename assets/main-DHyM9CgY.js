@@ -1,4 +1,4 @@
-import"./style-DalMV2Ko.js";const c=[{id:1,number:"01",name:"Grandz Bet",tools:["Website","Figma","2024"],previewImg:"/portfolio-new/1_hero.png",previewDesc:"An online platform for iGaming and sports betting, offering casino games, virtual sports, and live betting."},{id:2,number:"02",name:"Space Fortuna",tools:["Website","Figma","2023"],previewImg:"",previewDesc:""},{id:3,number:"03",name:"Grandz Race",tools:["Website","Figma","2023"],previewImg:"",previewDesc:""},{id:4,number:"04",name:"Tortuga",tools:["Landing Page","Webflow","2024"],previewImg:"",previewDesc:""},{id:5,number:"05",name:"Casino En Ligne Nouveau",tools:["Website","Figma","2023"],previewImg:"",previewDesc:""}],d={projects:c};document.addEventListener("DOMContentLoaded",()=>{document.querySelector("#app").innerHTML=`
+import"./style-kXwTelB-.js";const c=[{id:1,number:"01",name:"Grandz Bet",tools:["Website","Figma","2024"],previewImg:"/portfolio-new/1_hero.png",previewDesc:"An online platform for iGaming and sports betting, offering casino games, virtual sports, and live betting."},{id:2,number:"02",name:"Space Fortuna",tools:["Website","Figma","2023"],previewImg:"",previewDesc:""},{id:3,number:"03",name:"Grandz Race",tools:["Website","Figma","2023"],previewImg:"",previewDesc:""},{id:4,number:"04",name:"Tortuga",tools:["Landing Page","Webflow","2024"],previewImg:"",previewDesc:""},{id:5,number:"05",name:"Casino En Ligne Nouveau",tools:["Website","Figma","2023"],previewImg:"",previewDesc:""}],d={projects:c};document.addEventListener("DOMContentLoaded",()=>{document.querySelector("#app").innerHTML=`
     <header>
         <div class="logo-container">
           <a href="/portfolio-new/index.html" class="logo">GALINA GANEVA</a>
@@ -27,13 +27,13 @@ import"./style-DalMV2Ko.js";const c=[{id:1,number:"01",name:"Grandz Bet",tools:[
       <p>Galina Ganeva</p>
     </footer>
   `});const p=`
-  <section style="position: relative; width: 100%;">
+  <section style="width: 100%; ">
     <div class="hero-container">
       <h1 class="hero-title left" style="animation-delay: 0s;">Less Noise,</h1>
       <h1 class="hero-title middle" style="animation-delay: 0.2s;">More Clarity,</h1>
       <h1 class="hero-title right" style="animation-delay: 0.4s;">Bold Impact.</h1>
     </div>
-    <div class="spline-container" style="width: 100%; overflow:hidden">
+    <div class="spline-container" style="width: 100vw; overflow:hidden; top: 81px;">
       <div class="spline-container">
         <spline-viewer
           url="https://prod.spline.design/K-5M7t3eeTR7hjzy/scene.splinecode"
