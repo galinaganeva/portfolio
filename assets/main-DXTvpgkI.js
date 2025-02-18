@@ -1,4 +1,4 @@
-import"./style-zEPlTBoL.js";const d=[{id:1,number:"01",name:"Grandz Bet",tools:["Website","Figma","2024"],previewImg:"/portfolio-new/1_hero.png",previewDesc:"An online platform for iGaming and sports betting, offering casino games, virtual sports, and live betting."},{id:2,number:"02",name:"Space Fortuna",tools:["Website","Figma","2023"],previewImg:"",previewDesc:""},{id:3,number:"03",name:"Grandz Race",tools:["Website","Figma","2023"],previewImg:"",previewDesc:""},{id:4,number:"04",name:"Tortuga",tools:["Landing Page","Webflow","2024"],previewImg:"",previewDesc:""},{id:5,number:"05",name:"Casino En Ligne Nouveau",tools:["Website","Figma","2023"],previewImg:"",previewDesc:""}],p={projects:d};document.addEventListener("DOMContentLoaded",()=>{document.querySelector("#app").innerHTML=`
+import"./style-DalMV2Ko.js";const c=[{id:1,number:"01",name:"Grandz Bet",tools:["Website","Figma","2024"],previewImg:"/portfolio-new/1_hero.png",previewDesc:"An online platform for iGaming and sports betting, offering casino games, virtual sports, and live betting."},{id:2,number:"02",name:"Space Fortuna",tools:["Website","Figma","2023"],previewImg:"",previewDesc:""},{id:3,number:"03",name:"Grandz Race",tools:["Website","Figma","2023"],previewImg:"",previewDesc:""},{id:4,number:"04",name:"Tortuga",tools:["Landing Page","Webflow","2024"],previewImg:"",previewDesc:""},{id:5,number:"05",name:"Casino En Ligne Nouveau",tools:["Website","Figma","2023"],previewImg:"",previewDesc:""}],d={projects:c};document.addEventListener("DOMContentLoaded",()=>{document.querySelector("#app").innerHTML=`
     <header>
         <div class="logo-container">
           <a href="/portfolio-new/index.html" class="logo">GALINA GANEVA</a>
@@ -26,7 +26,7 @@ import"./style-zEPlTBoL.js";const d=[{id:1,number:"01",name:"Grandz Bet",tools:[
       <p>2025</p>
       <p>Galina Ganeva</p>
     </footer>
-  `});const v=`
+  `});const p=`
   <section style="position: relative; width: 100%;">
     <div class="hero-container">
       <h1 class="hero-title left" style="animation-delay: 0s;">Less Noise,</h1>
@@ -49,17 +49,18 @@ import"./style-zEPlTBoL.js";const d=[{id:1,number:"01",name:"Grandz Bet",tools:[
       brand identity.
     </h1>
   </section>
-`,h=()=>`
+`,v=()=>`
     <section class="projects">
-      ${p.projects.map(e=>`
-        <a class="project-container" href="/portfolio-new/project/project.html?id=${e.id}" class="project-link">
+      ${d.projects.map(e=>`
+        <a class="project-container project-link" href="/portfolio-new/project/project.html?id=${e.id}">
+          <div class="line"></div>
           <div class="project" data-project-id="${e.id}">
             <h3 class="project-number">${e.number}</h3>
             <div class="project-info">
               <h2 class="project-name">${e.name}</h2>
               <div class="project-tools">
-                ${e.tools.map(s=>`
-                  <h4 class="project-item">${s}</h4>
+                ${e.tools.map(t=>`
+                  <h4 class="project-item">${t}</h4>
                 `).join("")}
               </div>
             </div>
@@ -71,4 +72,4 @@ import"./style-zEPlTBoL.js";const d=[{id:1,number:"01",name:"Grandz Bet",tools:[
         </a>
       `).join("")}
     </section>
-  `;document.addEventListener("DOMContentLoaded",()=>{var a;const e=document.querySelector("#main");e&&(e.innerHTML+=v,e.innerHTML+=m,e.innerHTML+=h());const s=new IntersectionObserver(i=>{i.forEach(t=>{t.isIntersecting&&(t.target.classList.add("visible"),s.unobserve(t.target))})},{threshold:.1}),n=document.querySelector(".about-text");n&&s.observe(n);const o=document.querySelector("spline-viewer");if(o){const i=(a=o.shadowRoot)==null?void 0:a.querySelector("#logo");i&&i.remove()}const c=new IntersectionObserver(i=>{i.forEach(t=>{t.isIntersecting&&t.target.classList.add("line-visible")})},{threshold:.2});document.querySelectorAll(".project").forEach(i=>{c.observe(i)});const l=new IntersectionObserver(i=>{i.forEach(t=>{t.isIntersecting&&t.target.classList.add("line-visible")})},{threshold:.9}),r=document.querySelector(".projects");r&&l.observe(r)});
+  `;document.addEventListener("DOMContentLoaded",()=>{var l;const e=document.querySelector("#main");e&&(e.innerHTML+=p,e.innerHTML+=m,e.innerHTML+=v());const t=i=>{const s=i.getBoundingClientRect();return s.top>=0&&s.top<=(window.innerHeight||document.documentElement.clientHeight)},a=()=>{const i=document.querySelector(".about-text");i&&!i.classList.contains("visible")&&t(i)&&i.classList.add("visible"),document.querySelectorAll(".line").forEach(o=>{o.classList.contains("line-visible")||t(o)&&o.classList.add("line-visible")});const n=document.querySelector(".projects");n&&!n.classList.contains("line-visible")&&t(n)&&n.classList.add("line-visible")};a(),window.addEventListener("scroll",a,{passive:!0});const r=document.querySelector("spline-viewer");if(r){const i=(l=r.shadowRoot)==null?void 0:l.querySelector("#logo");i&&i.remove()}});
