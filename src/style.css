@@ -241,6 +241,7 @@ p {
   align-self: stretch;
   position: relative;
   width: 100%;
+  box-sizing: border-box;
 }
 .project-container {
   width: 100%;

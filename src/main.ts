@@ -44,13 +44,13 @@ document.addEventListener('DOMContentLoaded',() => {
 
 // Hero section
 const heroSection = `
-  <section style="position: relative; width: 100%;">
+  <section style="width: 100%; ">
     <div class="hero-container">
       <h1 class="hero-title left" style="animation-delay: 0s;">Less Noise,</h1>
       <h1 class="hero-title middle" style="animation-delay: 0.2s;">More Clarity,</h1>
       <h1 class="hero-title right" style="animation-delay: 0.4s;">Bold Impact.</h1>
     </div>
-    <div class="spline-container" style="width: 100%; overflow:hidden">
+    <div class="spline-container" style="width: 100vw; overflow:hidden; top: 81px;">
       <div class="spline-container">
         <spline-viewer
           url="https://prod.spline.design/K-5M7t3eeTR7hjzy/scene.splinecode"
