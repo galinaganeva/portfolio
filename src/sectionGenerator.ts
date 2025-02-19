@@ -110,6 +110,10 @@ document.addEventListener("DOMContentLoaded", () => {
     console.error("Project not found");
     return;
   }
+  const projectInfo = project.sections.find(section => section.type === 'projectInfo') as ProjectInfoSection;
+  if (projectInfo) {
+    document.title = `${projectInfo.title} | Galina Ganeva`;
+  }
 
   const main = document.querySelector<HTMLElement>('#main');
   if (main) {
