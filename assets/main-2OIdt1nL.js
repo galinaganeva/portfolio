@@ -1,4 +1,4 @@
-import"./style-kXwTelB-.js";const c=[{id:1,number:"01",name:"Grandz Bet",tools:["Website","Figma","2024"],previewImg:"/portfolio/1_hero.png",previewDesc:"An online platform for iGaming and sports betting, offering casino games, virtual sports, and live betting."},{id:2,number:"02",name:"Space Fortuna",tools:["Website","Figma","2023"],previewImg:"",previewDesc:""},{id:3,number:"03",name:"Grandz Race",tools:["Website","Figma","2023"],previewImg:"",previewDesc:""},{id:4,number:"04",name:"Tortuga",tools:["Landing Page","Webflow","2024"],previewImg:"",previewDesc:""},{id:5,number:"05",name:"Casino En Ligne Nouveau",tools:["Website","Figma","2023"],previewImg:"",previewDesc:""}],d={projects:c};document.addEventListener("DOMContentLoaded",()=>{document.querySelector("#app").innerHTML=`
+import"./style-DCcNwnnD.js";const c=[{id:1,number:"01",name:"Grandz Bet",tools:["Website","Figma","2024"],previewImg:"/portfolio/1_hero.png",previewDesc:"An online platform for iGaming and sports betting, offering casino games, virtual sports, and live betting."},{id:2,number:"02",name:"Space Fortuna",tools:["Website","Figma","2023"],previewImg:"/portfolio/2_hero.webp",previewDesc:"An online platform for iGaming offering casino games and promotions."},{id:3,number:"03",name:"Grandz Race",tools:["Website","Figma","2023"],previewImg:"/portfolio/3_hero.webp",previewDesc:"An online platform for iGaming offering casino games and promotions."},{id:4,number:"04",name:"Tortuga",tools:["Landing Page","Webflow","2024"],previewImg:"/portfolio/4_hero.webp",previewDesc:"A landing page for a An online platform for iGaming built on Webflow."},{id:5,number:"05",name:"Casino En Ligne Nouveau",tools:["Website","Figma","2023"],previewImg:"/portfolio/5_hero.webp",previewDesc:"A website offering Igaming rankings, reviews and articles."}],d={projects:c};document.addEventListener("DOMContentLoaded",()=>{document.querySelector("#app").innerHTML=`
     <header>
         <div class="logo-container">
           <a href="/portfolio/index.html" class="logo">GALINA GANEVA</a>
@@ -9,11 +9,11 @@ import"./style-kXwTelB-.js";const c=[{id:1,number:"01",name:"Grandz Bet",tools:[
               <a href="/portfolio/GalinaGaneva_CV.pdf" target="_blank">
                 <div class="link-content">
                   <p>Resume</p>
-                  <img src="/portfolio/arrow.svg" width="32" height="32" />
+                  <img src="/portfolio/header-arrow.svg" width="28" height="28" />
                 </div>
                 <div class="link-content-duplicate">
                   <p>Resume</p>
-                  <img src="/portfolio/arrow.svg" width="32" height="32" />
+                  <img src="/portfolio/header-arrow.svg" width="28" height="28" />
                 </div>
               </a>
             </li>
@@ -59,8 +59,8 @@ import"./style-kXwTelB-.js";const c=[{id:1,number:"01",name:"Grandz Bet",tools:[
             <div class="project-info">
               <h2 class="project-name">${e.name}</h2>
               <div class="project-tools">
-                ${e.tools.map(t=>`
-                  <h4 class="project-item">${t}</h4>
+                ${e.tools.map(n=>`
+                  <h4 class="project-item">${n}</h4>
                 `).join("")}
               </div>
             </div>
@@ -72,4 +72,4 @@ import"./style-kXwTelB-.js";const c=[{id:1,number:"01",name:"Grandz Bet",tools:[
         </a>
       `).join("")}
     </section>
-  `;document.addEventListener("DOMContentLoaded",()=>{var l;const e=document.querySelector("#main");e&&(e.innerHTML+=p,e.innerHTML+=m,e.innerHTML+=v());const t=i=>{const s=i.getBoundingClientRect();return s.top>=0&&s.top<=(window.innerHeight||document.documentElement.clientHeight)},a=()=>{const i=document.querySelector(".about-text");i&&!i.classList.contains("visible")&&t(i)&&i.classList.add("visible"),document.querySelectorAll(".line").forEach(o=>{o.classList.contains("line-visible")||t(o)&&o.classList.add("line-visible")});const n=document.querySelector(".projects");n&&!n.classList.contains("line-visible")&&t(n)&&n.classList.add("line-visible")};a(),window.addEventListener("scroll",a,{passive:!0});const r=document.querySelector("spline-viewer");if(r){const i=(l=r.shadowRoot)==null?void 0:l.querySelector("#logo");i&&i.remove()}});
+  `;document.addEventListener("DOMContentLoaded",()=>{var l;const e=document.querySelector("#main");e&&(e.innerHTML+=p,e.innerHTML+=m,e.innerHTML+=v());const n=i=>{const t=i.getBoundingClientRect();return t.top>=0&&t.top<=(window.innerHeight||document.documentElement.clientHeight)},a=()=>{const i=document.querySelector(".about-text");i&&!i.classList.contains("visible")&&n(i)&&i.classList.add("visible"),document.querySelectorAll(".line").forEach(s=>{s.classList.contains("line-visible")||n(s)&&s.classList.add("line-visible")});const o=document.querySelector(".projects");o&&!o.classList.contains("line-visible")&&n(o)&&o.classList.add("line-visible")};a(),window.addEventListener("scroll",a,{passive:!0});const r=document.querySelector("spline-viewer");if(r){const i=(l=r.shadowRoot)==null?void 0:l.querySelector("#logo");i&&i.remove()}});
