@@ -38,6 +38,10 @@
           "description": "The primary challenge was to design a platform that seamlessly combined i-Gaming and sports betting experiences while ensuring it remained intuitive and engaging for both new and experienced users. Balancing the complexity of sports betting interfaces with the fast-paced nature of gaming required careful attention to usability and information hierarchy. <br /><br /> Additionally, we needed to create a scalable design system that could support a wide range of features, from live betting and in-game interactions to personalized dashboards, without overwhelming the user. <br /><br /> Another key challenge was aligning our designs with responsible gaming regulations while maintaining a user-friendly and enjoyable experience. We also faced tight deadlines, which required efficient collaboration and rapid iterations based on user feedback. <br /><br /> This project pushed us to think critically about navigation flows, accessibility, and mobile responsiveness, ensuring a consistent experience across devices while meeting both business goals and user needs."
         },
         {
+          "type": "photosSection",
+          "photos": ["/portfolio/1_photos_3.webp", "/portfolio/1_photos_4.webp"]
+        },
+        {
           "type": "testimonialSection",
           "title": "Our new design system reduced development time for future features by 50%.",
           "description": "Smart systems. Faster outcomes."
@@ -70,7 +74,7 @@
         },
         {
           "type": "imageSection",
-          "src": "/portfolio/2_hero.png"
+          "src": "/portfolio/2_hero.webp"
         },
         {
           "type": "textSection",
@@ -79,12 +83,16 @@
         },
         {
           "type": "photosSection",
-          "photos": ["/portfolio/2_photos_1.png", "/portfolio/2_photos_2.png"]
+          "photos": ["/portfolio/2_photos_1.webp", "/portfolio/2_photos_2.webp"]
         },
         {
           "type": "textSection",
           "title": "Solutions & Improvements",
           "description": "My refinements were aimed at improving usability and aligning the design with the brand’s aesthetic while resolving issues identified during the design audit. <br /><br />On the landing pages, I restructured content blocks and adjusted visual elements to create a clear hierarchy and guide user actions effectively. I redesigned error pages with concise messaging and intuitive navigation options to reduce user frustration and help them quickly recover from errors. <br /><br />For modals, I optimized layouts, improved button placements, and ensured consistent styling to create a smooth and cohesive experience for users. Additionally, I addressed responsive design issues across pages, ensuring that landing pages, modals, and error screens displayed consistently across desktop and mobile devices. <br /><br />Through my design audit, I resolved issues related to button styles, spacing, and accessibility, enhancing both usability and aesthetic consistency."
+        },
+        {
+          "type": "photosSection",
+          "photos": ["/portfolio/2_photos_3.webp", "/portfolio/2_photos_4.webp"]
         },
         {
           "type": "testimonialSection",
@@ -119,7 +127,7 @@
         },
         {
           "type": "imageSection",
-          "src": "/portfolio/3_hero.png"
+          "src": "/portfolio/3_hero.webp"
         },
         {
           "type": "textSection",
@@ -128,7 +136,7 @@
         },
         {
           "type": "photosSection",
-          "photos": ["/portfolio/3_photos_1.png", "/portfolio/3_photos_2.png"]
+          "photos": ["/portfolio/3_photos_1.webp", "/portfolio/3_photos_2.webp"]
         },
         {
           "type": "textSection",
@@ -168,7 +176,7 @@
         },
         {
           "type": "imageSection",
-          "src": "/portfolio/tortuga_hero.png"
+          "src": "/portfolio/4_hero.webp"
         },
         {
           "type": "textSection",
@@ -177,7 +185,7 @@
         },
         {
           "type": "photosSection",
-          "photos": ["/portfolio/tortuga_1.png", "/portfolio/tortuga_2.png"]
+          "photos": ["/portfolio/4_photos_1.webp", "/portfolio/4_photos_2.webp"]
         },
         {
           "type": "textSection",
@@ -217,7 +225,7 @@
         },
         {
           "type": "imageSection",
-          "src": "/portfolio/casino_hero.png"
+          "src": "/portfolio/5_hero.webp"
         },
         {
           "type": "textSection",
@@ -226,7 +234,7 @@
         },
         {
           "type": "photosSection",
-          "photos": ["/portfolio/casino_1.png", "/portfolio/casino_2.png"]
+          "photos": ["/portfolio/5_photos_1.webp", "/portfolio/5_photos_2.webp"]
         },
         {
           "type": "textSection",

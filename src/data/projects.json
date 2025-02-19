@@ -13,32 +13,32 @@
       "number": "02",
       "name": "Space Fortuna",
       "tools": ["Website", "Figma", "2023"],
-      "previewImg": "",
-      "previewDesc": ""
+      "previewImg": "/portfolio/2_hero.webp",
+      "previewDesc": "An online platform for iGaming offering casino games and promotions."
     },
     {
       "id": 3,
       "number": "03",
       "name": "Grandz Race",
       "tools": ["Website", "Figma", "2023"],
-      "previewImg": "",
-      "previewDesc": ""
+      "previewImg": "/portfolio/3_hero.webp",
+      "previewDesc": "An online platform for iGaming offering casino games and promotions."
     },
     {
       "id": 4,
       "number": "04",
       "name": "Tortuga",
       "tools": ["Landing Page", "Webflow", "2024"],
-      "previewImg": "",
-      "previewDesc": ""
+      "previewImg": "/portfolio/4_hero.webp",
+      "previewDesc": "A landing page for a An online platform for iGaming built on Webflow."
     },
     {
       "id": 5,
       "number": "05",
       "name": "Casino En Ligne Nouveau",
       "tools": ["Website", "Figma", "2023"],
-      "previewImg": "",
-      "previewDesc": ""
+      "previewImg": "/portfolio/5_hero.webp",
+      "previewDesc": "A website offering Igaming rankings, reviews and articles."
     }
   ]
 }

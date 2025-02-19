@@ -22,11 +22,11 @@ document.addEventListener('DOMContentLoaded',() => {
               <a href="/portfolio/GalinaGaneva_CV.pdf" target="_blank">
                 <div class="link-content">
                   <p>Resume</p>
-                  <img src="/portfolio/arrow.svg" width="32" height="32" />
+                  <img src="/portfolio/header-arrow.svg" width="28" height="28" />
                 </div>
                 <div class="link-content-duplicate">
                   <p>Resume</p>
-                  <img src="/portfolio/arrow.svg" width="32" height="32" />
+                  <img src="/portfolio/header-arrow.svg" width="28" height="28" />
                 </div>
               </a>
             </li>
