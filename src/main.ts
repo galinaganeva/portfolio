@@ -14,19 +14,19 @@ document.addEventListener('DOMContentLoaded',() => {
   document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <header>
         <div class="logo-container">
-          <a href="/portfolio-new/index.html" class="logo">GALINA GANEVA</a>
+          <a href="/portfolio/index.html" class="logo">GALINA GANEVA</a>
         </div>
         <nav>
           <ul>
             <li>
-              <a href="/portfolio-new/GalinaGaneva_CV.pdf" target="_blank">
+              <a href="/portfolio/GalinaGaneva_CV.pdf" target="_blank">
                 <div class="link-content">
                   <p>Resume</p>
-                  <img src="/portfolio-new/arrow.svg" width="32" height="32" />
+                  <img src="/portfolio/arrow.svg" width="32" height="32" />
                 </div>
                 <div class="link-content-duplicate">
                   <p>Resume</p>
-                  <img src="/portfolio-new/arrow.svg" width="32" height="32" />
+                  <img src="/portfolio/arrow.svg" width="32" height="32" />
                 </div>
               </a>
             </li>
@@ -76,7 +76,7 @@ const generateProjectsHTML = () => {
   return `
     <section class="projects">
       ${projectsData.projects.map((project: Project) => `
-        <a class="project-container project-link" href="/portfolio-new/project/project.html?id=${project.id}">
+        <a class="project-container project-link" href="/portfolio/project/project.html?id=${project.id}">
           <div class="line"></div>
           <div class="project" data-project-id="${project.id}">
             <h3 class="project-number">${project.number}</h3>

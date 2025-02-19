@@ -8,7 +8,7 @@
           "title": "Grandz Bet",
           "description": "I-Gaming and sports betting platform",
           "visitSiteText": "Visit Site",
-          "visitSiteIcon": "/portfolio-new/arrow.svg",
+          "visitSiteIcon": "/portfolio/arrow.svg",
           "visitSiteLink": "https://grandzbet7.com/"
         },
         {
@@ -21,7 +21,7 @@
         },
         {
           "type": "imageSection",
-          "src": "/portfolio-new/1_hero.png"
+          "src": "/portfolio/1_hero.png"
         },
         {
           "type": "textSection",
@@ -30,10 +30,7 @@
         },
         {
           "type": "photosSection",
-          "photos": [
-            "/portfolio-new/1_photos_1.png",
-            "/portfolio-new/1_photos_2.png"
-          ]
+          "photos": ["/portfolio/1_photos_1.png", "/portfolio/1_photos_2.png"]
         },
         {
           "type": "textSection",
@@ -60,7 +57,7 @@
           "title": "Space Fortuna",
           "description": "I-Gaming platform",
           "visitSiteText": "Visit Site",
-          "visitSiteIcon": "/portfolio-new/arrow.svg",
+          "visitSiteIcon": "/portfolio/arrow.svg",
           "visitSiteLink": "https://spacefortuna7.com/"
         },
         {
@@ -73,7 +70,7 @@
         },
         {
           "type": "imageSection",
-          "src": "/portfolio-new/2_hero.png"
+          "src": "/portfolio/2_hero.png"
         },
         {
           "type": "textSection",
@@ -82,10 +79,7 @@
         },
         {
           "type": "photosSection",
-          "photos": [
-            "/portfolio-new/2_photos_1.png",
-            "/portfolio-new/2_photos_2.png"
-          ]
+          "photos": ["/portfolio/2_photos_1.png", "/portfolio/2_photos_2.png"]
         },
         {
           "type": "textSection",
@@ -112,7 +106,7 @@
           "title": "Grandz Race",
           "description": "I-Gaming platform",
           "visitSiteText": "Visit Site",
-          "visitSiteIcon": "/portfolio-new/arrow.svg",
+          "visitSiteIcon": "/portfolio/arrow.svg",
           "visitSiteLink": "https://grandzrace.com/"
         },
         {
@@ -125,7 +119,7 @@
         },
         {
           "type": "imageSection",
-          "src": "/portfolio-new/3_hero.png"
+          "src": "/portfolio/3_hero.png"
         },
         {
           "type": "textSection",
@@ -134,10 +128,7 @@
         },
         {
           "type": "photosSection",
-          "photos": [
-            "/portfolio-new/3_photos_1.png",
-            "/portfolio-new/3_photos_2.png"
-          ]
+          "photos": ["/portfolio/3_photos_1.png", "/portfolio/3_photos_2.png"]
         },
         {
           "type": "textSection",
@@ -164,7 +155,7 @@
           "title": "Tortuga",
           "description": "Landing page for the website Tortuga",
           "visitSiteText": "Visit Site",
-          "visitSiteIcon": "/portfolio-new/arrow.svg",
+          "visitSiteIcon": "/portfolio/arrow.svg",
           "visitSiteLink": "https://tortugacasinod.com/"
         },
         {
@@ -177,7 +168,7 @@
         },
         {
           "type": "imageSection",
-          "src": "/portfolio-new/tortuga_hero.png"
+          "src": "/portfolio/tortuga_hero.png"
         },
         {
           "type": "textSection",
@@ -186,10 +177,7 @@
         },
         {
           "type": "photosSection",
-          "photos": [
-            "/portfolio-new/tortuga_1.png",
-            "/portfolio-new/tortuga_2.png"
-          ]
+          "photos": ["/portfolio/tortuga_1.png", "/portfolio/tortuga_2.png"]
         },
         {
           "type": "textSection",
@@ -216,7 +204,7 @@
           "title": "Casino En Ligne Nouveau",
           "description": "Website for iGaming rankings, reviews, and articles",
           "visitSiteText": "Visit Site",
-          "visitSiteIcon": "/portfolio-new/arrow.svg",
+          "visitSiteIcon": "/portfolio/arrow.svg",
           "visitSiteLink": "https://casinoenlignenouveau.com/"
         },
         {
@@ -229,7 +217,7 @@
         },
         {
           "type": "imageSection",
-          "src": "/portfolio-new/casino_hero.png"
+          "src": "/portfolio/casino_hero.png"
         },
         {
           "type": "textSection",
@@ -238,10 +226,7 @@
         },
         {
           "type": "photosSection",
-          "photos": [
-            "/portfolio-new/casino_1.png",
-            "/portfolio-new/casino_2.png"
-          ]
+          "photos": ["/portfolio/casino_1.png", "/portfolio/casino_2.png"]
         },
         {
           "type": "textSection",
