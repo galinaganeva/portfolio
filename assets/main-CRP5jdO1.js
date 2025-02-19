@@ -1,19 +1,19 @@
-import"./style-kXwTelB-.js";const c=[{id:1,number:"01",name:"Grandz Bet",tools:["Website","Figma","2024"],previewImg:"/portfolio-new/1_hero.png",previewDesc:"An online platform for iGaming and sports betting, offering casino games, virtual sports, and live betting."},{id:2,number:"02",name:"Space Fortuna",tools:["Website","Figma","2023"],previewImg:"",previewDesc:""},{id:3,number:"03",name:"Grandz Race",tools:["Website","Figma","2023"],previewImg:"",previewDesc:""},{id:4,number:"04",name:"Tortuga",tools:["Landing Page","Webflow","2024"],previewImg:"",previewDesc:""},{id:5,number:"05",name:"Casino En Ligne Nouveau",tools:["Website","Figma","2023"],previewImg:"",previewDesc:""}],d={projects:c};document.addEventListener("DOMContentLoaded",()=>{document.querySelector("#app").innerHTML=`
+import"./style-kXwTelB-.js";const c=[{id:1,number:"01",name:"Grandz Bet",tools:["Website","Figma","2024"],previewImg:"/portfolio/1_hero.png",previewDesc:"An online platform for iGaming and sports betting, offering casino games, virtual sports, and live betting."},{id:2,number:"02",name:"Space Fortuna",tools:["Website","Figma","2023"],previewImg:"",previewDesc:""},{id:3,number:"03",name:"Grandz Race",tools:["Website","Figma","2023"],previewImg:"",previewDesc:""},{id:4,number:"04",name:"Tortuga",tools:["Landing Page","Webflow","2024"],previewImg:"",previewDesc:""},{id:5,number:"05",name:"Casino En Ligne Nouveau",tools:["Website","Figma","2023"],previewImg:"",previewDesc:""}],d={projects:c};document.addEventListener("DOMContentLoaded",()=>{document.querySelector("#app").innerHTML=`
     <header>
         <div class="logo-container">
-          <a href="/portfolio-new/index.html" class="logo">GALINA GANEVA</a>
+          <a href="/portfolio/index.html" class="logo">GALINA GANEVA</a>
         </div>
         <nav>
           <ul>
             <li>
-              <a href="/portfolio-new/GalinaGaneva_CV.pdf" target="_blank">
+              <a href="/portfolio/GalinaGaneva_CV.pdf" target="_blank">
                 <div class="link-content">
                   <p>Resume</p>
-                  <img src="/portfolio-new/arrow.svg" width="32" height="32" />
+                  <img src="/portfolio/arrow.svg" width="32" height="32" />
                 </div>
                 <div class="link-content-duplicate">
                   <p>Resume</p>
-                  <img src="/portfolio-new/arrow.svg" width="32" height="32" />
+                  <img src="/portfolio/arrow.svg" width="32" height="32" />
                 </div>
               </a>
             </li>
@@ -52,7 +52,7 @@ import"./style-kXwTelB-.js";const c=[{id:1,number:"01",name:"Grandz Bet",tools:[
 `,v=()=>`
     <section class="projects">
       ${d.projects.map(e=>`
-        <a class="project-container project-link" href="/portfolio-new/project/project.html?id=${e.id}">
+        <a class="project-container project-link" href="/portfolio/project/project.html?id=${e.id}">
           <div class="line"></div>
           <div class="project" data-project-id="${e.id}">
             <h3 class="project-number">${e.number}</h3>
