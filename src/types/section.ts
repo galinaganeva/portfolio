@@ -42,6 +42,9 @@ export interface TestimonialSection extends BaseSection {
   title: string;
   description: string;
 }
+export interface ProjectSection extends BaseSection {
+  type: 'projectSection';
+}
 
 export type Section = 
   | ProjectInfoSection 
@@ -49,7 +52,8 @@ export type Section =
   | ImageSection 
   | TextSection 
   | PhotosSection 
-  | TestimonialSection;
+  | TestimonialSection
+  | ProjectSection;
 
 export interface Project {
   projectId: number;

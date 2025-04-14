@@ -2,6 +2,7 @@ import './style.css';
 import content from './data/content.json';
 import { Section, ContentData, ProjectInfoSection, ProjectToolsSection, ImageSection, PhotosSection, TestimonialSection, TextSection } from './types/section';
 import { ProgressBar } from './utils/progressBar';
+import { generateProjectsHTML } from './main';
 
 class SectionGenerator {
   private static generateProjectInfo(section: ProjectInfoSection): string {
@@ -79,6 +80,11 @@ class SectionGenerator {
       </section>
     `;
   }
+  private static generateProjectsSection(section: Section): string {
+    let html = generateProjectsHTML();
+    // html = html.replace('<section class="projects">', `<section class="projects"><h3 class="section-text-title-new">More Projects</h3>`);
+    return html;
+  }
 
   private static generateSection(section: Section): string {
     switch (section.type) {
@@ -88,6 +94,7 @@ class SectionGenerator {
       case 'textSection': return this.generateTextSection(section);
       case 'photosSection': return this.generatePhotosSection(section);
       case 'testimonialSection': return this.generateTestimonialSection(section);
+      case 'projectSection': return this.generateProjectsSection(section) ;
       default: return '';
     }
   }
@@ -118,5 +125,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const main = document.querySelector<HTMLElement>('#main');
   if (main) {
     main.innerHTML = SectionGenerator.generateMainContent(project.sections);
+
   }
 });

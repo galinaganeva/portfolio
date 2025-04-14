@@ -71,32 +71,61 @@ const aboutSection = `
   </section>
 `;
 
-// Generate projects HTML
-const generateProjectsHTML = () => {
+// Helper to generate a single project item
+const generateProjectItem = (project: Project, projectNumber : string): string => {
   return `
-    <section class="projects">
-      ${projectsData.projects.map((project: Project) => `
-        <a class="project-container project-link" href="/portfolio/project/project.html?id=${project.id}">
-          <div class="line"></div>
-          <div class="project" data-project-id="${project.id}">
-            <h3 class="project-number">${project.number}</h3>
-            <div class="project-info">
-              <h2 class="project-name">${project.name}</h2>
-              <div class="project-tools">
-                ${project.tools.map(tool => `
-                  <h4 class="project-item">${tool}</h4>
-                `).join('')}
-              </div>
-            </div>
-            <div class="project-preview">
-              <img class="preview-img" src="${project.previewImg}" alt="${project.name}"/>
-              <p class="preview-text">${project.previewDesc}</p>
-            </div>
+    <a class="project-container project-link" href="/portfolio/project/project.html?id=${project.id}">
+      <div class="line"></div>
+      <div class="project" data-project-id="${project.id}">
+        <div class="project-number-container">
+          <h3 class="project-number">${projectNumber}</h3>
+          <img src="/portfolio/arrow.svg" class="arrow" alt="Arrow icon" />
+        </div>
+        <img class="preview-img not-landscape" src="${project.previewImg}" alt="${project.name}"/>
+        <div class="project-info">
+          <h2 class="project-name">${project.name}</h2>
+          <div class="project-tools">
+            ${project.tools.map(tool => `<h4 class="project-item">${tool}</h4>`).join('')}
           </div>
-        </a>
-      `).join('')}
-    </section>
+        </div>
+        <div class="project-preview">
+          <img class="preview-img" src="${project.previewImg}" alt="${project.name}"/>
+          <p class="preview-text">${project.previewDesc}</p>
+        </div>
+        <p class="preview-text not-landscape">${project.previewDesc}</p>
+      </div>
+    </a>
   `;
+};
+
+// Modular function to generate all projects HTML
+export const generateProjectsHTML = (): string => {
+  const projects = projectsData.projects;
+  const urlParams = new URLSearchParams(window.location.search);
+  const currentProjectId = parseInt(urlParams.get('id') || '', 10);
+  let html = `<section class="projects">`;
+
+  // First project (in focus)
+  if (projects.length > 0 && isNaN(currentProjectId)) {
+    html += `<div class="project-focus">`;
+    html += generateProjectItem(projects[0],"0" + 1);
+    html += `</div>`;
+  }
+
+  // Group the remaining projects by two
+  if (projects.length > 1) {
+    for (let i = 1; i < projects.length; i += 2) {
+      html += `<div class="project-group">`;
+      html += generateProjectItem(projects[i], "0" + i);
+      if (i + 1 < projects.length) {
+        html += generateProjectItem(projects[i + 1], "0" + (i + 1));
+      }
+      html += `</div>`;
+    }
+  }
+
+  html += `</section>`;
+  return html;
 };
 
 // Add sections to main
