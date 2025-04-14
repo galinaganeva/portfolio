@@ -80,7 +80,7 @@ class SectionGenerator {
       </section>
     `;
   }
-  private static generateProjectsSection(section: Section): string {
+  private static generateProjectsSection(): string {
     let html = generateProjectsHTML();
     // html = html.replace('<section class="projects">', `<section class="projects"><h3 class="section-text-title-new">More Projects</h3>`);
     return html;
@@ -94,7 +94,7 @@ class SectionGenerator {
       case 'textSection': return this.generateTextSection(section);
       case 'photosSection': return this.generatePhotosSection(section);
       case 'testimonialSection': return this.generateTestimonialSection(section);
-      case 'projectSection': return this.generateProjectsSection(section) ;
+      case 'projectSection': return this.generateProjectsSection() ;
       default: return '';
     }
   }
